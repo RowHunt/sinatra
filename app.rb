@@ -10,6 +10,7 @@ end
 
 get '/cat' do
   # We're calling erb, a method from the templating system that ships with Ruby. We are asking it to render a file called index.erb from the folder views
+  @name = ["Amigo", "Misty", "Almond"].sample
   erb(:index)
 end
 
